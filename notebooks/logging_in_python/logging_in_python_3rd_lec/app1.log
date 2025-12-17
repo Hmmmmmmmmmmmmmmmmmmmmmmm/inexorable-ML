@@ -1,0 +1,12 @@
+2025-10-29 ~ 21:13:44 Arthematic_App DEBUG Adding 10 + 20 = 30
+2025-10-29 ~ 21:13:44 Arthematic_App DEBUG Substracting 10 - 20 = -10
+2025-10-29 ~ 21:13:44 Arthematic_App DEBUG Multiplying 10 x 20 = 200
+2025-10-29 ~ 21:13:44 Arthematic_App DEBUG Dividing 10 / 20 = 0.5
+2025-10-29 ~ 21:13:54 Arthematic_App DEBUG Adding 100 + 0 = 100
+2025-10-29 ~ 21:13:54 Arthematic_App DEBUG Substracting 100 - 0 = 100
+2025-10-29 ~ 21:13:54 Arthematic_App DEBUG Multiplying 100 x 0 = 0
+2025-10-29 ~ 21:13:54 Arthematic_App DEBUG  Dividing with zero error!
+2025-10-30 ~ 00:11:03 Arthematic_App DEBUG Adding 1 + 1 = 2
+2025-10-30 ~ 00:11:03 Arthematic_App DEBUG Substracting 1 - 1 = 0
+2025-10-30 ~ 00:11:03 Arthematic_App DEBUG Multiplying 1 x 1 = 1
+2025-10-30 ~ 00:11:03 Arthematic_App DEBUG Dividing 1 / 1 = 1.0
