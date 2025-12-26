@@ -54,3 +54,4 @@ imblearn
 opencv-python
 mediapipe
 openpyxl
+statsmodels
