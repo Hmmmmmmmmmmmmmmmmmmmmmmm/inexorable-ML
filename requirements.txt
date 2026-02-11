@@ -57,3 +57,5 @@ openpyxl
 statsmodels
 plotly
 nbformat
+wordcloud
+category_encoders
