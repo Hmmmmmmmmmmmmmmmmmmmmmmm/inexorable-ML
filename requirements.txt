@@ -59,3 +59,4 @@ plotly
 nbformat
 wordcloud
 category_encoders
+catboost
