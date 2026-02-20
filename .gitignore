@@ -3,3 +3,4 @@ venv/
 # Ignore downloaded web pages / temp text dumps
 file_https__*
 *.tmp
+notebooks\Core_ML\Supervised_Learning\models
