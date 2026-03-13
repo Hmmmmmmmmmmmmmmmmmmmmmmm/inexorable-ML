@@ -64,3 +64,5 @@ xgboost
 kneed
 Flask
 FastAPI
+fastapi
+redis

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastAPI + Redis</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:system-ui, -apple-system, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+}
+
+h1{
+    margin-bottom:20px;
+    font-size:28px;
+    text-align:center;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+form{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    background:#0f172a;
+    color:white;
+}
+
+input:focus{
+    outline:2px solid #3b82f6;
+}
+
+button{
+    background:#3b82f6;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+.messages{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.msg{
+    background:#0f172a;
+    padding:12px;
+    border-radius:8px;
+    border-left:4px solid #3b82f6;
+}
+
+/* Responsive */
+
+@media (max-width:600px){
+
+    h1{
+        font-size:22px;
+    }
+
+    form{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⚡ FastAPI + Redis Message Board</h1>
+
+<div class="card">
+
+<form method="post" action="/add">
+<input name="message" placeholder="Write a message..." required>
+<button type="submit">Send</button>
+</form>
+
+<div class="messages">
+
+{% for m in messages %}
+<div class="msg">{{m}}</div>
+{% endfor %}
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
