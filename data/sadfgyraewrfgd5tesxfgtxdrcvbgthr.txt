@@ -1,0 +1,1088 @@
+ELLO WAHT CRAZY DDAYMNNNNNFFFFFFFFFFFFFFDDDADASWDWGAHFJASDFVNSDVJDNFGKDJGKFJKFJKFGJFKJFKGJFG   
+  
+ 
+ 
+ 
+ 
+  
+    
+ 
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
+0	1	0	3	Braund, Mr. Owen Harris	male	22.0	1	0	A/5 21171	7.2500	NaN	S
+1	2	1	1	Cumings, Mrs. John Bradley (Florence Briggs Th...	female	38.0	1	0	PC 17599	71.2833	C85	C
+2	3	1	3	Heikkinen, Miss. Laina	female	26.0	0	0	STON/O2. 3101282	7.9250	NaN	S
+3	4	1	1	Futrelle, Mrs. Jacques Heath (Lily May Peel)	female	35.0	1	0	113803	53.1000	C123	S
+4	5	0	3	Allen, Mr. William Henry	male	35.0	0	0	373450	8.0500	NaN	S
+PassengerId	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
+0	892	3	Kelly, Mr. James	male	34.5	0	0	330911	7.8292	NaN	Q
+1	893	3	Wilkes, Mrs. James (Ellen Needs)	female	47.0	1	0	363272	7.0000	NaN	S
+2	894	2	Myles, Mr. Thomas Francis	male	62.0	0	0	240276	9.6875	NaN	Q
+3	895	3	Wirz, Mr. Albert	male	27.0	0	0	315154	8.6625	NaN	S
+4	896	3	Hirvonen, Mrs. Alexander (Helga E Lindqvist)	female	22.0	1	1	3101298	12.2875	NaN	S
+...	...	...	...	...	...	...	...	...	...	...	...
+413	1305	3	Spector, Mr. Woolf	male	NaN	0	0	A.5. 3236	8.0500	NaN	S
+414	1306	1	Oliva y Ocana, Dona. Fermina	female	39.0	0	0	PC 17758	108.9000	C105	C
+415	1307	3	Saether, Mr. Simon Sivertsen	male	38.5	0	0	SOTON/O.Q. 3101262	7.2500	NaN	S
+416	1308	3	Ware, Mr. Frederick	male	NaN	0	0	359309	8.0500	NaN	S
+417	1309	3	Peter, Master. Michael J	male	NaN	1	1	2668	22.3583	NaN	C
+418 rows × 11 columns
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    object 
+ 11  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 418 entries, 0 to 417
+Data columns (total 11 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  418 non-null    int64  
+ 1   Pclass       418 non-null    int64  
+ 2   Name         418 non-null    object 
+ 3   Sex          418 non-null    object 
+ 4   Age          332 non-null    float64
+ 5   SibSp        418 non-null    int64  
+ 6   Parch        418 non-null    int64  
+ 7   Ticket       418 non-null    object 
+ 8   Fare         417 non-null    float64
+ 9   Cabin        91 non-null     object 
+ 10  Embarked     418 non-null    object 
+dtypes: float64(2), int64(4), object(5)
+memory usage: 36.0+ KB
+<Axes: >
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    object 
+ 11  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+PassengerId	Survived	Pclass	Age	SibSp	Parch	Fare
+count	891.000000	891.000000	891.000000	714.000000	891.000000	891.000000	891.000000
+mean	446.000000	0.383838	2.308642	29.699118	0.523008	0.381594	32.204208
+std	257.353842	0.486592	0.836071	14.526497	1.102743	0.806057	49.693429
+min	1.000000	0.000000	1.000000	0.420000	0.000000	0.000000	0.000000
+25%	223.500000	0.000000	2.000000	20.125000	0.000000	0.000000	7.910400
+50%	446.000000	0.000000	3.000000	28.000000	0.000000	0.000000	14.454200
+75%	668.500000	1.000000	3.000000	38.000000	1.000000	0.000000	31.000000
+max	891.000000	1.000000	3.000000	80.000000	8.000000	6.000000	512.329200
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
+0	1	0	3	Braund, Mr. Owen Harris	male	22.0	1	0	A/5 21171	7.2500	NaN	S
+2	3	1	3	Heikkinen, Miss. Laina	female	26.0	0	0	STON/O2. 3101282	7.9250	NaN	S
+4	5	0	3	Allen, Mr. William Henry	male	35.0	0	0	373450	8.0500	NaN	S
+5	6	0	3	Moran, Mr. James	male	NaN	0	0	330877	8.4583	NaN	Q
+7	8	0	3	Palsson, Master. Gosta Leonard	male	2.0	3	1	349909	21.0750	NaN	S
+...	...	...	...	...	...	...	...	...	...	...	...	...
+884	885	0	3	Sutehall, Mr. Henry Jr	male	25.0	0	0	SOTON/OQ 392076	7.0500	NaN	S
+885	886	0	3	Rice, Mrs. William (Margaret Norton)	female	39.0	0	5	382652	29.1250	NaN	Q
+886	887	0	2	Montvila, Rev. Juozas	male	27.0	0	0	211536	13.0000	NaN	S
+888	889	0	3	Johnston, Miss. Catherine Helen "Carrie"	female	NaN	1	2	W./C. 6607	23.4500	NaN	S
+890	891	0	3	Dooley, Mr. Patrick	male	32.0	0	0	370376	7.7500	NaN	Q
+708 rows × 12 columns
+
+
+<Axes: xlabel='Cabin', ylabel='Count'>
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    object 
+ 11  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
+       'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'],
+      dtype='object')
+array([[<Axes: title={'center': 'PassengerId'}>,
+        <Axes: title={'center': 'Survived'}>,
+        <Axes: title={'center': 'Pclass'}>],
+       [<Axes: title={'center': 'Age'}>,
+        <Axes: title={'center': 'SibSp'}>,
+        <Axes: title={'center': 'Parch'}>],
+       [<Axes: title={'center': 'Fare'}>, <Axes: >, <Axes: >]],
+      dtype=object)
+<Axes: >
+<Axes: xlabel='Survived', ylabel='count'>
+<Axes: xlabel='Survived', ylabel='count'>
+<Axes: xlabel='Survived', ylabel='count'>
+<Axes: xlabel='Age'>
+<Axes: xlabel='SibSp', ylabel='count'>
+<Axes: >
+<Axes: xlabel='Pclass', ylabel='Age'>
+Pclass
+1    38.233441
+2    29.877630
+3    25.140620
+Name: Age, dtype: float64
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
+0	1	0	3	Braund, Mr. Owen Harris	male	22.0	1	0	A/5 21171	7.2500	NaN	S
+1	2	1	1	Cumings, Mrs. John Bradley (Florence Briggs Th...	female	38.0	1	0	PC 17599	71.2833	C85	C
+2	3	1	3	Heikkinen, Miss. Laina	female	26.0	0	0	STON/O2. 3101282	7.9250	NaN	S
+3	4	1	1	Futrelle, Mrs. Jacques Heath (Lily May Peel)	female	35.0	1	0	113803	53.1000	C123	S
+4	5	0	3	Allen, Mr. William Henry	male	35.0	0	0	373450	8.0500	NaN	S
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age              0
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+<Axes: >
+array([nan, 'C85', 'C123', 'E46', 'G6', 'C103', 'D56', 'A6',
+       'C23 C25 C27', 'B78', 'D33', 'B30', 'C52', 'B28', 'C83', 'F33',
+       'F G73', 'E31', 'A5', 'D10 D12', 'D26', 'C110', 'B58 B60', 'E101',
+       'F E69', 'D47', 'B86', 'F2', 'C2', 'E33', 'B19', 'A7', 'C49', 'F4',
+       'A32', 'B4', 'B80', 'A31', 'D36', 'D15', 'C93', 'C78', 'D35',
+       'C87', 'B77', 'E67', 'B94', 'C125', 'C99', 'C118', 'D7', 'A19',
+       'B49', 'D', 'C22 C26', 'C106', 'C65', 'E36', 'C54',
+       'B57 B59 B63 B66', 'C7', 'E34', 'C32', 'B18', 'C124', 'C91', 'E40',
+       'T', 'C128', 'D37', 'B35', 'E50', 'C82', 'B96 B98', 'E10', 'E44',
+       'A34', 'C104', 'C111', 'C92', 'E38', 'D21', 'E12', 'E63', 'A14',
+       'B37', 'C30', 'D20', 'B79', 'E25', 'D46', 'B73', 'C95', 'B38',
+       'B39', 'B22', 'C86', 'C70', 'A16', 'C101', 'C68', 'A10', 'E68',
+       'B41', 'A20', 'D19', 'D50', 'D9', 'A23', 'B50', 'A26', 'D48',
+       'E58', 'C126', 'B71', 'B51 B53 B55', 'D49', 'B5', 'B20', 'F G63',
+       'C62 C64', 'E24', 'C90', 'C45', 'E8', 'B101', 'D45', 'C46', 'D30',
+       'E121', 'D11', 'E77', 'F38', 'B3', 'D6', 'B82 B84', 'D17', 'A36',
+       'B102', 'B69', 'E49', 'C47', 'D28', 'E17', 'A24', 'C50', 'B42',
+       'C148'], dtype=object)
+
+PassengerId	Survived	Pclass	Age	SibSp	Parch	Fare
+PassengerId	1.000000	-0.005007	-0.035144	0.036847	-0.057527	-0.001652	0.012658
+Survived	-0.005007	1.000000	-0.338481	-0.077221	-0.035322	0.081629	0.257307
+Pclass	-0.035144	-0.338481	1.000000	-0.369226	0.083081	0.018443	-0.549500
+Age	0.036847	-0.077221	-0.369226	1.000000	-0.308247	-0.189119	0.096067
+SibSp	-0.057527	-0.035322	0.083081	-0.308247	1.000000	0.414838	0.159651
+Parch	-0.001652	0.081629	0.018443	-0.189119	0.414838	1.000000	0.216225
+Fare	0.012658	0.257307	-0.549500	0.096067	0.159651	0.216225	1.000000
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Embarked
+0	1	0	3	Braund, Mr. Owen Harris	male	22.0	1	0	A/5 21171	7.2500	S
+1	2	1	1	Cumings, Mrs. John Bradley (Florence Briggs Th...	female	38.0	1	0	PC 17599	71.2833	C
+2	3	1	3	Heikkinen, Miss. Laina	female	26.0	0	0	STON/O2. 3101282	7.9250	S
+3	4	1	1	Futrelle, Mrs. Jacques Heath (Lily May Peel)	female	35.0	1	0	113803	53.1000	S
+4	5	0	3	Allen, Mr. William Henry	male	35.0	0	0	373450	8.0500	S
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
+0	1	0	3	Braund, Mr. Owen Harris	male	22.0	1	0	A/5 21171	7.2500	NaN	S
+1	2	1	1	Cumings, Mrs. John Bradley (Florence Briggs Th...	female	38.0	1	0	PC 17599	71.2833	C85	C
+2	3	1	3	Heikkinen, Miss. Laina	female	26.0	0	0	STON/O2. 3101282	7.9250	NaN	S
+3	4	1	1	Futrelle, Mrs. Jacques Heath (Lily May Peel)	female	35.0	1	0	113803	53.1000	C123	S
+4	5	0	3	Allen, Mr. William Henry	male	35.0	0	0	373450	8.0500	NaN	S
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 11 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          891 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(4)
+memory usage: 76.7+ KB
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Embarked
+0	1	0	3	Braund, Mr. Owen Harris	male	22.0	1	0	A/5 21171	7.2500	S
+1	2	1	1	Cumings, Mrs. John Bradley (Florence Briggs Th...	female	38.0	1	0	PC 17599	71.2833	C
+2	3	1	3	Heikkinen, Miss. Laina	female	26.0	0	0	STON/O2. 3101282	7.9250	S
+3	4	1	1	Futrelle, Mrs. Jacques Heath (Lily May Peel)	female	35.0	1	0	113803	53.1000	S
+4	5	0	3	Allen, Mr. William Henry	male	35.0	0	0	373450	8.0500	S
+array(['S', 'C', 'Q', nan], dtype=object)
+<class 'pandas.core.frame.DataFrame'>
+Index: 889 entries, 0 to 890
+Data columns (total 11 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  889 non-null    int64  
+ 1   Survived     889 non-null    int64  
+ 2   Pclass       889 non-null    int64  
+ 3   Name         889 non-null    object 
+ 4   Sex          889 non-null    object 
+ 5   Age          889 non-null    float64
+ 6   SibSp        889 non-null    int64  
+ 7   Parch        889 non-null    int64  
+ 8   Ticket       889 non-null    object 
+ 9   Fare         889 non-null    float64
+ 10  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(4)
+memory usage: 83.3+ KB
+PassengerId    0
+Survived       0
+Pclass         0
+Name           0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           0
+Embarked       0
+dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+Index: 889 entries, 0 to 890
+Data columns (total 11 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  889 non-null    int64  
+ 1   Survived     889 non-null    int64  
+ 2   Pclass       889 non-null    int64  
+ 3   Name         889 non-null    object 
+ 4   Sex          889 non-null    object 
+ 5   Age          889 non-null    float64
+ 6   SibSp        889 non-null    int64  
+ 7   Parch        889 non-null    int64  
+ 8   Ticket       889 non-null    object 
+ 9   Fare         889 non-null    float64
+ 10  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(4)
+memory usage: 83.3+ KB
+array(['male', 'female'], dtype=object)
+male
+0	1
+1	0
+2	0
+3	0
+4	1
+...	...
+886	1
+887	0
+888	0
+889	1
+890	1
+889 rows × 1 columns
+
+C	Q	S
+0	0	0	1
+1	1	0	0
+2	0	0	1
+3	0	0	1
+4	0	0	1
+...	...	...	...
+886	0	0	1
+887	0	0	1
+888	0	0	1
+889	1	0	0
+890	0	1	0
+889 rows × 3 columns
+
+array(['A/5 21171', 'PC 17599', 'STON/O2. 3101282', '113803', '373450',
+       '330877', '17463', '349909', '347742', '237736', 'PP 9549',
+       '113783', 'A/5. 2151', '347082', '350406', '248706', '382652',
+       '244373', '345763', '2649', '239865', '248698', '330923', '113788',
+       '347077', '2631', '19950', '330959', '349216', 'PC 17601',
+       'PC 17569', '335677', 'C.A. 24579', 'PC 17604', '113789', '2677',
+       'A./5. 2152', '345764', '2651', '7546', '11668', '349253',
+       'SC/Paris 2123', '330958', 'S.C./A.4. 23567', '370371', '14311',
+       '2662', '349237', '3101295', 'A/4. 39886', 'PC 17572', '2926',
+       '113509', '19947', 'C.A. 31026', '2697', 'C.A. 34651', 'CA 2144',
+       '2669', '36973', '347088', 'PC 17605', '2661', 'C.A. 29395',
+       'S.P. 3464', '3101281', '315151', 'C.A. 33111', 'S.O.C. 14879',
+       '2680', '1601', '348123', '349208', '374746', '248738', '364516',
+       '345767', '345779', '330932', '113059', 'SO/C 14885', '3101278',
+       'W./C. 6608', 'SOTON/OQ 392086', '343275', '343276', '347466',
+       'W.E.P. 5734', 'C.A. 2315', '364500', '374910', 'PC 17754',
+       'PC 17759', '231919', '244367', '349245', '349215', '35281',
+       '7540', '3101276', '349207', '343120', '312991', '349249',
+       '371110', '110465', '2665', '324669', '4136', '2627',
+       'STON/O 2. 3101294', '370369', 'PC 17558', 'A4. 54510', '27267',
+       '370372', 'C 17369', '2668', '347061', '349241',
+       'SOTON/O.Q. 3101307', 'A/5. 3337', '228414', 'C.A. 29178',
+       'SC/PARIS 2133', '11752', '7534', 'PC 17593', '2678', '347081',
+       'STON/O2. 3101279', '365222', '231945', 'C.A. 33112', '350043',
+       '230080', '244310', 'S.O.P. 1166', '113776', 'A.5. 11206',
+...
+       '347060', 'PC 17592', '392091', '113055', '2629', '350026',
+       '28134', '17466', '233866', '236852', 'SC/PARIS 2149', 'PC 17590',
+       '345777', '349248', '695', '345765', '2667', '349212', '349217',
+       '349257', '7552', 'C.A./SOTON 34068', 'SOTON/OQ 392076', '211536',
+       '112053', '111369', '370376'], dtype=object)
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+PassengerId	Survived	Pclass	Age	SibSp	Parch	Fare	male	C	Q	S
+0	1	0	3	22.0	1	0	7.2500	1	0	0	1
+1	2	1	1	38.0	1	0	71.2833	0	1	0	0
+2	3	1	3	26.0	0	0	7.9250	0	0	0	1
+3	4	1	1	35.0	1	0	53.1000	0	0	0	1
+4	5	0	3	35.0	0	0	8.0500	1	0	0	1
+...	...	...	...	...	...	...	...	...	...	...	...
+886	887	0	2	27.0	0	0	13.0000	1	0	0	1
+887	888	1	1	19.0	0	0	30.0000	0	0	0	1
+888	889	0	3	25.0	1	2	23.4500	0	0	0	1
+889	890	1	1	26.0	0	0	30.0000	1	1	0	0
+890	891	0	3	32.0	0	0	7.7500	1	0	1	0
+889 rows × 11 columns
+
+
+<class 'pandas.core.frame.DataFrame'>
+Index: 889 entries, 0 to 890
+Data columns (total 11 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  889 non-null    int64  
+ 1   Survived     889 non-null    int64  
+ 2   Pclass       889 non-null    int64  
+ 3   Age          889 non-null    float64
+ 4   SibSp        889 non-null    int64  
+ 5   Parch        889 non-null    int64  
+ 6   Fare         889 non-null    float64
+ 7   sex          889 non-null    int64  
+ 8   C            889 non-null    int64  
+ 9   Q            889 non-null    int64  
+ 10  S            889 non-null    int64  
+dtypes: float64(2), int64(9)
+memory usage: 83.3 KB
+
+PassengerId      0
+Pclass           0
+Name             0
+Sex              0
+Age             86
+SibSp            0
+Parch            0
+Ticket           0
+Fare             1
+Cabin          327
+Embarked         0
+dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    object 
+ 11  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+Index(['PassengerId', 'Survived', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare',
+       'sex', 'C', 'Q', 'S'],
+      dtype='object')
+PassengerId	Pclass	Age	SibSp	Parch	Fare	sex	C	Q	S
+0	1	3	22.0	1	0	7.2500	1	0	0	1
+1	2	1	38.0	1	0	71.2833	0	1	0	0
+2	3	3	26.0	0	0	7.9250	0	0	0	1
+3	4	1	35.0	1	0	53.1000	0	0	0	1
+4	5	3	35.0	0	0	8.0500	1	0	0	1
+...	...	...	...	...	...	...	...	...	...	...
+886	887	2	27.0	0	0	13.0000	1	0	0	1
+887	888	1	19.0	0	0	30.0000	0	0	0	1
+888	889	3	25.0	1	2	23.4500	0	0	0	1
+889	890	1	26.0	0	0	30.0000	1	1	0	0
+890	891	3	32.0	0	0	7.7500	1	0	1	0
+889 rows × 10 columns
+
+0      0
+1      1
+2      1
+3      1
+4      0
+      ..
+886    0
+887    1
+888    0
+889    1
+890    0
+Name: Survived, Length: 889, dtype: int64
+(666, 10)
+Epoch 0, Loss: 0.691053
+Epoch 100, Loss: 0.596215
+Epoch 200, Loss: 0.547348
+Epoch 300, Loss: 0.518905
+Epoch 400, Loss: 0.500903
+Epoch 500, Loss: 0.488825
+Epoch 600, Loss: 0.480371
+Epoch 700, Loss: 0.474259
+Epoch 800, Loss: 0.469723
+Epoch 900, Loss: 0.466287
+Epoch 1000, Loss: 0.463637
+Epoch 1100, Loss: 0.461563
+Epoch 1200, Loss: 0.459918
+Epoch 1300, Loss: 0.458598
+Epoch 1400, Loss: 0.457529
+Epoch 1500, Loss: 0.456655
+Epoch 1600, Loss: 0.455935
+Epoch 1700, Loss: 0.455338
+Epoch 1800, Loss: 0.454838
+Epoch 1900, Loss: 0.454418
+Epoch 2000, Loss: 0.454063
+Epoch 2100, Loss: 0.453761
+Epoch 2200, Loss: 0.453504
+Epoch 2300, Loss: 0.453283
+Epoch 2400, Loss: 0.453093
+Epoch 2500, Loss: 0.452929
+Epoch 2600, Loss: 0.452786
+Epoch 2700, Loss: 0.452663
+Epoch 2800, Loss: 0.452555
+Epoch 2900, Loss: 0.452460
+Epoch 3000, Loss: 0.452378
+Epoch 3100, Loss: 0.452305
+Epoch 3200, Loss: 0.452242
+Epoch 3300, Loss: 0.452185
+Epoch 3400, Loss: 0.452136
+Epoch 3500, Loss: 0.452092
+Epoch 3600, Loss: 0.452053
+Epoch 3700, Loss: 0.452019
+Epoch 3800, Loss: 0.451989
+Epoch 3900, Loss: 0.451962
+Epoch 4000, Loss: 0.451938
+Epoch 4100, Loss: 0.451917
+...
+Epoch 4700, Loss: 0.451831
+Epoch 4800, Loss: 0.451822
+Epoch 4900, Loss: 0.451814
+Training Completed
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+np.float64(0.7937219730941704)
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+
+LogisticRegression
+?i
+Parameters
+np.float64(0.8340807174887892)
+Confusion Matrix:
+ [[110  26]
+ [ 20  67]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.81      0.83       136
+           1       0.72      0.77      0.74        87
+
+    accuracy                           0.79       223
+   macro avg       0.78      0.79      0.79       223
+weighted avg       0.80      0.79      0.79       223
+
+Survived
+0    549
+1    340
+Name: count, dtype: int64
+Best threshold: 0.9989826869579184
+TPR: 0.45977011494252873
+FPR: 0.2426470588235294
+
+
+
+
+Alright, thank you for dropping the *entire* thing — this helps a lot.
+Short version first, then I’ll be very concrete and tell you **exactly what to change and why**.
+
+---
+
+## 🚨 The honest diagnosis
+
+Your model is **massively over-engineered** for your data and that is **100% why**:
+
+* 1 epoch = 2+ hours
+* Loss explodes (~10k)
+* Accuracy stuck at ~0.35–0.4
+* GPU (even if you have one) is choking
+
+This isn’t “TensorFlow being slow”.
+This is a **~80–100 MILLION parameter monster** doing attention + residuals + BiLSTMs **on both branches**, *then* a huge dense head.
+
+You basically built a research-paper model and asked it to sprint.
+
+---
+
+## 🔥 The BIGGEST problems (ranked)
+
+### 1️⃣ **LSTM sizes are absurdly large**
+
+You’re doing things like:
+
+```python
+Bidirectional(LSTM(1024))
+```
+
+That means:
+
+* Forward LSTM: 1024 units
+* Backward LSTM: 1024 units
+* Output = **2048 per timestep**
+
+Your **first text layer alone**:
+
+```
+~9.4 MILLION params
+```
+
+You stack **FIVE** of these per branch.
+You have **two branches**.
+
+👉 This is the core reason it takes ~8 seconds *per batch*.
+
+---
+
+### 2️⃣ Attention inside every LSTM block
+
+Attention is **O(T²)** with sequence length.
+
+You have:
+
+* Text: 100 timesteps
+* TS: 30 timesteps
+* Attention **after every LSTM layer**
+
+This multiplies compute brutally.
+
+---
+
+### 3️⃣ Regression target not scaled
+
+Your tweet count MSE is ~10,000 → it dominates training.
+
+This is why:
+
+* Loss is huge
+* Sentiment accuracy barely improves
+* Gradients are nasty
+
+---
+
+### 4️⃣ Losses are unbalanced
+
+You compiled like this:
+
+```python
+loss=['categorical_crossentropy', 'mean_squared_error']
+```
+
+So total loss = CE + MSE
+MSE completely steamrolls CE.
+
+---
+
+### 5️⃣ Dense head is also way too big
+
+After all that sequence modeling, you add:
+
+```python
+1024 → 512 → 256 → 128
+```
+
+At that point, you’re just burning time.
+
+---
+
+## ✅ EXACTLY WHAT TO FIX (step by step)
+
+I’ll give you **surgical fixes**, not a total rewrite.
+
+---
+
+## ✅ FIX 1: SCALE `y_train_ts` (non-negotiable)
+
+Do this **before training**:
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+
+y_train_ts = scaler.fit_transform(y_train_ts.reshape(-1, 1))
+y_test_ts  = scaler.transform(y_test_ts.reshape(-1, 1))
+```
+
+This alone will drop loss from ~10,000 → ~0.1–1.
+
+---
+
+## ✅ FIX 2: BALANCE LOSSES PROPERLY
+
+Name your outputs first:
+
+```python
+sentiment_outputs = Dense(3, activation="softmax", name="sentiment")(x)
+tweet_count = Dense(1, activation="linear", name="count")(x)
+```
+
+Then compile like this:
+
+```python
+model.compile(
+    optimizer=Adam(learning_rate=1e-4),
+    loss={
+        "sentiment": "categorical_crossentropy",
+        "count": "mse"
+    },
+    loss_weights={
+        "sentiment": 1.0,
+        "count": 0.2   # try 0.1 if regression still dominates
+    },
+    metrics={
+        "sentiment": "accuracy",
+        "count": "mse"
+    }
+)
+```
+
+---
+
+## ✅ FIX 3: SLASH LSTM SIZES (this is the BIG one)
+
+### ❌ Current (this is killing you)
+
+```python
+1024 → 512 → 256 → 256 → 128
+```
+
+### ✅ Replace with THIS
+
+```python
+256 → 128 → 64
+```
+
+And **reduce depth**.
+
+#### Updated `lstm_block` usage (TEXT)
+
+```python
+x_text = lstm_block(x_text, 256, return_sequences=True)
+x_text = lstm_block(x_text, 128, return_sequences=True)
+x_text = lstm_block(x_text, 64, return_sequences=False)
+```
+
+#### Updated `lstm_block` usage (TIME SERIES)
+
+```python
+x_time_series = lstm_block(input_time_series, 128, return_sequences=True)
+x_time_series = lstm_block(x_time_series, 64, return_sequences=False)
+```
+
+👉 This alone will:
+
+* Cut parameters by **~10×**
+* Turn 8 sec/step → **<1 sec/step**
+* Make training actually stable
+
+---
+
+## ✅ FIX 4: ATTENTION — USE IT ONCE, NOT EVERYWHERE
+
+Inside `lstm_block`, **remove attention entirely**
+Then apply it **once per branch**.
+
+### Change `lstm_block` to:
+
+```python
+def lstm_block(x, units, return_sequences=False, dp=0.3):
+    x = Bidirectional(LSTM(units, return_sequences=return_sequences))(x)
+    x = BatchNormalization()(x)
+    x = Dropout(dp)(x)
+    return x
+```
+
+### Apply attention once (TEXT branch)
+
+```python
+x_text = Attention()([x_text, x_text])
+x_text = GlobalAveragePooling1D()(x_text)
+```
+
+Same idea for time series.
+
+---
+
+## ✅ FIX 5: Shrink the dense head
+
+Replace this:
+
+```python
+for units, rate in [(1024, 0.4), (512, 0.4), (256, 0.4), (128, 0.4)]:
+```
+
+With:
+
+```python
+for units, rate in [(256, 0.3), (128, 0.3)]:
+```
+
+---
+
+## 🧪 SANITY CHECK (DO THIS)
+
+Before full training:
+
+```python
+model.fit(
+    [X_train_text[:512], X_train_ts[:512]],
+    [y_train_one_hot[:512], y_train_ts[:512]],
+    epochs=1,
+    batch_size=32
+)
+```
+
+If this takes **more than ~20–30 seconds**, something is still wrong.
+
+---
+
+## 🎯 What you should expect AFTER fixes
+
+* ⏱️ Epoch time: **minutes**, not hours
+* 📉 Loss: starts < 2, not 10,000
+* 📈 Sentiment accuracy: >0.5 quickly (if data is decent)
+* 🧠 Model size: sane enough to debug and iterate
+
+---
+
+## Final real talk 😄
+
+What you built is *cool*, but it’s a **research-grade architecture**.
+For real data + iteration speed, **simpler wins**.
+
+If you want, next we can:
+
+* Rebuild a **clean minimal version**
+* Or tune this properly for GPU
+* Or split sentiment + regression training
+
+Just say the word 👌
+
+
+
+
+# Request: A modular Python script for media controls (volume, play/pause, next/prev track) with a **basic UI** and **gesture-based control** using **MediaPipe**. 
+
+### Detailed Requirements:
+Create a modular Python script that achieves the following:
+
+## **1. Basic UI for Media Controls (Tkinter)**
+- The UI should have buttons for the following media actions:
+    1. **Volume Control**: Buttons to increase and decrease the system volume.
+    2. **Play/Pause Media**: Button to toggle between playing and pausing media.
+    3. **Next/Previous Track**: Buttons to skip to the next or previous media track.
+    4. **Mute/Unmute**: Button to mute or unmute the audio.
+    5. **Exit**: Button to exit the application.
+
+## **2. Gesture-Based Control**
+- Integrate with **MediaPipe** to control the following actions based on **static hand gestures**:
+    1. **Play/Pause**: Recognize the **open hand** gesture (palm facing camera).
+    2. **Volume Up**: Recognize **thumbs up** gesture.
+    3. **Volume Down**: Recognize **thumbs down** gesture.
+    4. **Next Track**: Recognize a **swipe right** gesture.
+    5. **Previous Track**: Recognize a **swipe left** gesture.
+    6. **Mute/Unmute**: Recognize a **closed fist** gesture.
+  
+## **3. Actions to be Controlled by Gestures**
+- **Volume Control**: Use **pycaw** for controlling system volume.
+- **Play/Pause**: Use **pyautogui** to simulate media player key presses (e.g., spacebar for play/pause).
+- **Next/Previous Track**: Simulate media controls using **pyautogui** (Next/Previous track keys).
+- **Mute/Unmute**: Use **pycaw** to mute/unmute the system.
+
+## **4. Modular Design**
+- Create individual functions and classes to make the code **modular** and **professional**.
+- Ensure that the gesture recognition, media control functions, and the UI are separated into different components/modules.
+
+## **5. Code Pipeline** (Improve/ change as per optimal for task)
+- Organize the code into appropriate files:
+    - `main.py`: Entry point for the program, loads the GUI and controls.
+    - `media_controls.py`: Functions for volume, play/pause, next/prev track, mute/unmute.
+    - `gesture_controls.py`: Functions for gesture recognition and mapping them to actions.
+    - `gui.py`: The UI for controlling media actions via buttons and toggles.
+    - `gesture_recognition.py`: Integrates **MediaPipe** and uses ML for gesture recognition.
+
+### Deliverables:
+- A complete Python script that includes:
+  - **Tkinter-based UI** for controlling media.
+  - **Modular code** for separating gesture recognition and media controls.
+  - **ML-based gesture recognition** with **MediaPipe** for controlling actions.
+  - The script should be easily extendable for adding new gestures or controls.
+
+---
+
+Create a class MediaControls with the following methods:
+
+increase_volume(): Increases system volume.
+
+decrease_volume(): Decreases system volume.
+
+play_pause_media(): Toggles play/pause in media player.
+
+next_track(): Switches to next media track.
+
+prev_track(): Switches to previous media track.
+
+mute_unmute(): Toggles mute/unmute.
+
+Create a class GestureControls to map the following gestures:
+
+open_hand(): Recognize open hand gesture and map it to play/pause.
+
+thumbs_up(): Recognize thumbs up gesture and map it to volume up.
+
+thumbs_down(): Recognize thumbs down gesture and map it to volume down.
+
+swipe_left(): Recognize left swipe gesture and map it to previous track.
+
+swipe_right(): Recognize right swipe gesture and map it to next track.
+
+closed_fist(): Recognize closed fist gesture and map it to mute/unmute.
+
+Modular Code:
+
+Implement the GUI using Tkinter.
+
+Use pycaw for volume control and mute/unmute.
+
+Use pyautogui for controlling play/pause, next/prev track actions.
+
+Use MediaPipe for detecting hand gestures.
+
+Keep the code modular, with separate files for gui.py, gesture_controls.py, and media_controls.py.
+
+
+---
+
+### **Code Structure Breakdown**: (change as per necessary and use gesture as per convenience)
+
+#### 1. **main.py** (Entry point to launch the program)
+```python
+from gui import GUI
+from media_controls import MediaControls
+from gesture_controls import GestureControls
+
+def main():
+    # Initialize media controls and gesture controls
+    media_controls = MediaControls()
+    gesture_controls = GestureControls(media_controls)
+    
+    # Create the UI
+    gui = GUI(media_controls, gesture_controls)
+    
+    # Start the GUI
+    gui.run()
+
+if __name__ == "__main__":
+    main()
+
+2. media_controls.py (Handles all media control actions)
+import pyautogui
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+
+class MediaControls:
+    def __init__(self):
+        self.volume = self.get_volume()
+
+    def get_volume(self):
+        devices = AudioUtilities.GetSpeakers()
+        interface = devices.Activate(IAudioEndpointVolume._iid_, 0, None)
+        volume = interface.QueryInterface(IAudioEndpointVolume)
+        return volume
+
+    def increase_volume(self):
+        self.volume.SetMasterVolumeLevelScalar(1.0, None)  # Set to 100%
+
+    def decrease_volume(self):
+        self.volume.SetMasterVolumeLevelScalar(0.5, None)  # Set to 50%
+
+    def play_pause_media(self):
+        pyautogui.press('space')  # Simulate Play/Pause media action
+
+    def next_track(self):
+        pyautogui.press('nexttrack')  # Simulate Next Track
+
+    def prev_track(self):
+        pyautogui.press('prevtrack')  # Simulate Previous Track
+
+    def mute_unmute(self):
+        self.volume.SetMute(1, None)  # Mute
+        # To unmute, use volume.SetMute(0, None)
+
+3. gesture_controls.py (Handles gesture recognition and maps them to actions)
+import mediapipe as mp
+
+class GestureControls:
+    def __init__(self, media_controls):
+        self.media_controls = media_controls
+        self.mp_hands = mp.solutions.hands
+        self.hands = self.mp_hands.Hands()
+
+    def detect_gesture(self, frame):
+        results = self.hands.process(frame)
+        if results.multi_hand_landmarks:
+            for landmarks in results.multi_hand_landmarks:
+                # Check for specific gestures
+                if self.is_open_hand(landmarks):
+                    self.media_controls.play_pause_media()
+                elif self.is_thumbs_up(landmarks):
+                    self.media_controls.increase_volume()
+                elif self.is_thumbs_down(landmarks):
+                    self.media_controls.decrease_volume()
+                elif self.is_swipe_left(landmarks):
+                    self.media_controls.prev_track()
+                elif self.is_swipe_right(landmarks):
+                    self.media_controls.next_track()
+                elif self.is_closed_fist(landmarks):
+                    self.media_controls.mute_unmute()
+
+    def is_open_hand(self, landmarks):
+        # Implement check for open hand gesture
+        pass
+
+    def is_thumbs_up(self, landmarks):
+        # Implement check for thumbs up gesture
+        pass
+
+    def is_thumbs_down(self, landmarks):
+        # Implement check for thumbs down gesture
+        pass
+
+    def is_swipe_left(self, landmarks):
+        # Implement check for left swipe gesture
+        pass
+
+    def is_swipe_right(self, landmarks):
+        # Implement check for right swipe gesture
+        pass
+
+    def is_closed_fist(self, landmarks):
+        # Implement check for closed fist gesture
+        pass
+
+4. gui.py (Handles the user interface with Tkinter)
+import tkinter as tk
+
+class GUI:
+    def __init__(self, media_controls, gesture_controls):
+        self.media_controls = media_controls
+        self.gesture_controls = gesture_controls
+        self.window = tk.Tk()
+        self.window.title("Oculus HGR Media Control")
+        self.setup_ui()
+
+    def setup_ui(self):
+        self.play_button = tk.Button(self.window, text="Play/Pause", command=self.media_controls.play_pause_media)
+        self.play_button.pack()
+
+        self.volume_up_button = tk.Button(self.window, text="Volume Up", command=self.media_controls.increase_volume)
+        self.volume_up_button.pack()
+
+        self.volume_down_button = tk.Button(self.window, text="Volume Down", command=self.media_controls.decrease_volume)
+        self.volume_down_button.pack()
+
+        self.next_button = tk.Button(self.window, text="Next Track", command=self.media_controls.next_track)
+        self.next_button.pack()
+
+        self.prev_button = tk.Button(self.window, text="Previous Track", command=self.media_controls.prev_track)
+        self.prev_button.pack()
+
+        self.mute_button = tk.Button(self.window, text="Mute/Unmute", command=self.media_controls.mute_unmute)
+        self.mute_button.pack()
+
+    def run(self):
+        self.window.mainloop()
+
+Explanation:
+
+Modular Approach:
+
+main.py handles the orchestration between the UI and gestures.
+
+media_controls.py encapsulates all media control actions (volume, play/pause, etc.).
+
+gesture_controls.py contains logic for recognizing gestures using MediaPipe and maps them to actions.
+
+gui.py contains the Tkinter UI with buttons to control actions manually.
+
+Gesture Control: You define specific functions in gesture_controls.py to identify gestures using MediaPipe and trigger the corresponding media control actions.
+
+UI: Buttons in Tkinter trigger corresponding media actions via the media_controls class.
+
+How to Use:
+
+Ensure you have the required dependencies in your requirements.txt:
+
+pyautogui
+pycaw
+mediapipe
+tkinter
+
+
+To run the system:
+
+python main.py
+
+
+This approach provides a modular, professional, and extendable solution for your media control system with both button-based and gesture-based control.

@@ -1,0 +1,27 @@
+// Generalized EC Process Flowchart
+digraph EC_Process {
+	rankdir=TB size="8,10"
+	node [color=lightblue shape=ellipse style=filled]
+	start [label="Initialize
+(Create Initial Population)"]
+	output [label="Output
+(Best Solution)"]
+	node [color=lightgrey shape=rect style=filled]
+	eval [label="Evaluate
+(Assess Fitness)"]
+	select [label="Select
+(Apply Selection Pressure)"]
+	reproduce [label="Reproduce
+(Mutation & Crossover)"]
+	replace [label="Replace
+(Update Population)"]
+	node [color=salmon shape=diamond style=filled]
+	term [label="Terminate?"]
+	start -> eval
+	eval -> term
+	term -> output [label=Yes]
+	term -> select [label=No]
+	select -> reproduce
+	reproduce -> replace
+	replace -> eval
+}

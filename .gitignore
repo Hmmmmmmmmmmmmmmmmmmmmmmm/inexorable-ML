@@ -1,4 +1,4 @@
-data/
+
 venv/
 # Ignore downloaded web pages / temp text dumps
 file_https__*
